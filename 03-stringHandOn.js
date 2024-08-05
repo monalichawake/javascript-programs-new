@@ -41,6 +41,15 @@ var result = sentence.includes("up");
 var result = sentence.includes("up")
 console.log("Starting start end with up?:",result);
 
+console.log("========String Template==========");
+console.log(`I love only "JavaScript"`);
+var city = "Pune";
+var country = "India";
+console.log(`My city name is: ${city} and country is ${country}`);
+
+
+
+
 
 
 
