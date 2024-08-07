@@ -1,6 +1,7 @@
 console.log("=============1=============");
 
 function greaterNumber (n1,n2){
+
     var result = n1>=n2 ? n1:n2;
     console.log(`Given number are ${n1}, ${n2} and greater number is: ${result}`);
 }
@@ -10,7 +11,7 @@ greaterNumber (800,899);
 console.log("============2=============");
 
 function isEvenOrOddNum (num){
-    var result = num%2==0 ? true : false;
+    
     return result;
 }
 
