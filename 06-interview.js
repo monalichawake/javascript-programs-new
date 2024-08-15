@@ -22,7 +22,7 @@ console.log("================================")
 voteEligible(17);
 
 console.log("================================")
-voteEligible(-10);
+voteEligible(-10)
 
 console.log("================================")
 voteEligible(200);
