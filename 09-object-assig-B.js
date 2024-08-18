@@ -1,52 +1,27 @@
 
-const sbiBank = {
-    bankName: "State Bank of India",
-    location: "Wardha",
-    accountNo: 1234567890,
-    ifsc: "SBI123456",
-    interestRate: "10.55%",
-    bankDetails:function(){
-        console.log(`Bank Name: ${this.bankName}`,Location ${"this.location"}, (`Account No.: ${this.accountNo}`),  (`ifsc: ${this.ifsc}`), (`Interest Rate: ${this.interestRat}`);
-        
+// Define the Bank class
+class Bank {
+    constructor(bankName, location, accountNo, ifsc, interestRate) {
+        this.bankName = bankName;
+        this.location = location;
+        this.accountNo = accountNo;
+        this.ifsc = ifsc;
+        this.interestRate = interestRate;
     }
-}
-sbiBank.bankDetails();
 
-let axisBank = {
-    bankName: "Axis Bank",
-    location: "Pune",
-    accountNo: 1357908642,
-    ifsc: "AXIS00700",
-    interestRate: "9.55%",
-    bankDetails: function(){
-        console.log(`Bank Name: ${this.bankName}`), (`Location: ${this.location}`), (`Account No.: ${this.accountNo}`), (`ifsc: ${this.ifsc}`), (`Interest Rate: ${this.interestRate}`);
-        
+    // Method to show the details of the bank
+    showDetails() {
+        console.log(`BankName : ${this.bankName} || Location: ${this.location} || AccountNo: ${this.accountNo} || IFSC: ${this.ifsc}|| InterestRate: ${this.interestRate}`);
     }
 }
-axisBank.bankDetails();
 
-let hdfcBank = {
-    bankName: "HDFC Bank",
-    location: "Pune",
-    accountNo: 2468097531,
-    ifsc: "HDFC123456",
-    interestRate: "9.50%",
-    bankDetails: function(){
-        console.log(`Bank Name: ${this.bankName}`) || (`Location: ${this.location}`) || (`Account No.: ${this.accountNo}`) || (`ifsc: ${this.ifsc}`) || (`Interest Rate: ${this.interestRate}`);
-        
-    }
-}
-hdfcBank.bankDetails();
+const sbiBank = new Bank("SBI", "Mumbai", "123456789", "SBIN0001234", "3.5%");
+const axisBank = new Bank("Axis Bank", "Delhi", "9876544521", "UTIBn0001234", "3.0%");
+const hdfcBank = new Bank("HDFC Bank", "Bangalore", "192837465", "HDFC0001234", "3.8%");
+const yesBank = new Bank("Yes Bank", "Chennai", "564738291", "YESBf0001234", "3.7%");
 
-let yesBank = {
-    bankName: "YES Bank",
-    location: "Pune",
-    accountNo: 1098765432,
-    ifsc: "YESB12345",
-    interestRate: "8.55%",
-    bankDetails: function(){
-        console.log(`Bank Name: ${this.bankName}`) || (`Location: ${this.location}`)|| (`Account No.: ${this.accountNo}`)|| (`ifsc: ${this.ifsc}`) || (`Interest Rate: ${this.interestRate}`);
-        
-    }
-}
-yesBank.bankDetails();
+// Invoke the showDetails method on each bank object
+sbiBank.showDetails();
+axisBank.showDetails();
+hdfcBank.showDetails();
+yesBank.showDetails();
