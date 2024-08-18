@@ -14,7 +14,7 @@ var marksTypeOf = typeof marks;
 console.log("Type of marks is:", marksTypeOf)
 
 ("=======3=======")
-var is My working Status : true;
-console.log("My working Status", My Working Status);
-var My working Status Datatype: ", My working status
+var(`Is My working Status : true`);
+console.log(`My working Status:", My Working Status`);
+var (`My working Status Datatype:", My working status`);
 

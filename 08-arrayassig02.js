@@ -38,11 +38,26 @@ const array7 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
 array.splice(4, 3);
 console.log(array);
 
+console.log(`========Find all the even positioned element from arrayNumber sum it==============`);
+let array09=[20,31,40,25,11,29,9,60,2,11];
+var addition = 0;
+for (let index = 0; index < array09.length; index++) {
+    if (index%2==0) {
+    const element = array09[index];
+    addition =addition+element
 
-
-
+    }
+    
+} 
+ console.log(addition);
  
-
-
-
-
+ 
+ console.log("=======Find all the odd positioned element form array number sum it and log on console==========");
+ let array00=[20,31,40,25,23,11,29,9,60,2,11];
+ let sum=0;
+ 
+    for(const element = array00){
+        sum = sum + element
+    }
+  console.log(sum);
+  
