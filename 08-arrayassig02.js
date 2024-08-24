@@ -56,8 +56,9 @@ for (let index = 0; index < array09.length; index++) {
  let array00=[20,31,40,25,23,11,29,9,60,2,11];
  let sum=0;
  
-    for(const element = array00){
+    for(const element = array00) {
         sum = sum + element
     }
-  console.log(sum);
+console.log(`20,31,40,25,23,11,29,9,60,2,11`);
+
   
