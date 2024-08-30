@@ -1,15 +1,26 @@
+console.log(`=========================== [ 1.a ] =============================`);
+const goodMorning = () => {
+    console.log("Good Morning! Today is Monday");
+};
 
-console.log(`======With no args and no return value========`);
+goodMorning();
 
-let show = ()=>{
-    console.log('Good Morning, "Today is Monday"');  
-}
-show();
+console.log(`=========================== [ 2.a ] =============================`);
+const multi=(m1,m2,m3=10)=>{
+    console.log(`multiplication is ${m1*m2*m3} `);
+    
+};
+multi(5,5,2);
 
-console.log("Multiplication of 3 value=======");
-let multiply = (n1, n2, n3)=>{
-    let result = n1*n2*n3;
-    return result;
-}
-let mul = multiply(5,5,2);
-console.log(`Multiplication is: ${mul}`);
+console.log(`=========================== [ 2.b ] =============================`);
+multi(10,4);
+
+console.log(`=========================== [ 3.a ] =============================`);
+const add=(n1,n2,n3,n4,n5)=>{
+    console.log(`The addition is = ${n1+n2+n3+n4+n5}`);
+    
+};
+add(100,100,200,349,756);
+
+console.log(`=========================== [ 3.c ] =============================`);
+add("I am"," learning"," ES6"," features"," in depth");

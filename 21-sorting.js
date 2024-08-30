@@ -39,6 +39,7 @@ const arrayEight = arraySeven.sort( (n1, n2)=>{
     return n1>n2 ? -1 : 1; 
 });
 console.log(arrayEight);
+
 class Employee {
     constructor(emp_id, emp_name, emp_dept, emp_salary, emp_company){
         this.emp_id = emp_id;
